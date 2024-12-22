@@ -1,12 +1,27 @@
-document.getElementById("count-el").innerText="lets start counting"
+// document.getElementById("count-el").innerText="lets start counting"
  
 let count=0
-let countEL =document.getElementById("count-el")
+let saveEl=document.getElementById("save-el")
+
+let countEl =document.getElementById("count-el")
 console.log(countEL); //this gives the html element that has class name called countEl
 
 function increment()
 {
-    count=count+1
+    count+=1
     
-    countEL.innerText=count
+    countEl.innerText=count
+}
+function save()
+{ 
+    let countStr=count+" + "
+    saveEl.innerText+=countStr
+    console.log(count)
+    countEl.innerText=0
+    count=0
+    console.log(count)
+
+   
+
+    
 }
