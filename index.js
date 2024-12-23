@@ -1,4 +1,4 @@
-// document.getElementById("count-el").innerText="lets start counting"
+document.getElementById("count-el").innerText="lets start counting"
  
 let count=0
 let saveEl=document.getElementById("save-el")
@@ -16,7 +16,7 @@ function increment()
 function save()
 { 
     let countStr=count+" + "
-    saveEl.innerText+=countStr
+    saveEl.innerHTML+=countStr
     console.log(count)
     countEl.innerText=0
     count=0
